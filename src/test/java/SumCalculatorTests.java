@@ -14,17 +14,17 @@ public class SumCalculatorTests {
     public void testThat0InputHandledCorrectly() {
         Assertions.assertThrows(
                 IllegalArgumentException.class,
-                () -> calculator.calc(0)
+                () -> calculator.sum(0)
         );
     }
 
     @Test
     public void testThat1HandledCorrectly() {
-        Assertions.assertEquals(1, calculator.calc(1));
+        Assertions.assertEquals(1, calculator.sum(1));
     }
 
     @Test
     public void testThat3HandledCorrectly() {
-        Assertions.assertEquals(6, calculator.calc(3));
+        Assertions.assertEquals(6, calculator.sum(3));
     }
 }
